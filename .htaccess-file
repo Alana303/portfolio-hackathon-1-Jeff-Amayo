@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Force the redirect to redirect.html first
+RewriteRule ^$ redirect.html [L]
