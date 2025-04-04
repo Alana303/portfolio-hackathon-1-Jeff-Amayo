@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Amayo | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="home.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+   <section id="menubar">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="./images/Run2.jpeg" alt="Logo"></a>
+        </div>
+        <!-- Menu Icon for Mobile -->
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+        <!-- Nav Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about.html"><i class="fa fa-question-circle"></i> About Me</a></li>
+            <li><a href="#services.html"> <i class="fab fa-js-square"></i> </i> Skills</a></li>
+            <li><a href="#projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+            <li><a href="#logout.php"><i class="fa fa-sign-out"></i>Logout</a>
+        </ul>
+    </div>
+</section>
+
+
+    <!-------------- Hero Section ---------->
+    <section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 id="hero-title">Hi, I'm Jeff Amayo – <br>Crafting Dynamic <br>& Interactive Web <br>Experiences!</h1>
+            <p>I’m a junior web developer skilled in creating static websites using HTML, CSS, JavaScript, Bootstrap, and PHP, with knowledge of databases like phpMyAdmin.</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+        </div>
+        <div class="hero-image">
+            <img src="./images/Run1.jpg" alt="Jeff Amayo" />
+        </div>
+    </div>
+    </section>
+    
+
+    <!-------------- About Me Section -------->
+    <section id="about" class="about">
+    <div class="about-content">
+        <div class="about-img">
+            <img src="./images/Run1.jpg" alt="Jeff Amayo" />
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi, I'm Jeff Amayo, a passionate and highly motivated junior web developer who embraces continuous self-learning. Here’s what I bring to the table:</p>
+            <ul>
+                <li>💻 Proficient in HTML, CSS, JavaScript, Bootstrap, and PHP.</li>
+                <li>🛠️ Hands-on experience with phpMyAdmin for database management.</li>
+                <li>📚 A strong advocate for continuous learning and improvement.</li>
+                <li>🚀 Excited about creating responsive and interactive web applications.</li>
+                <li>👥 Engaged in web development communities to learn and grow.</li>
+            </ul>
+            <p>I'm always looking for new challenges to sharpen my skills and contribute to meaningful projects.</p>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+    <h2>Skills & Technologies</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript, PhP & Bootstrap</li>
+        <li>MySQL, Firebase</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Web Design</li>
+    </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="./images/home9.png" alt="EcomVista E-Commerce">
+            <h3>EcomVista E-Commerce</h3>
+            <p>A simple informational e-commerce platform built with HTML, CSS, JavaScript, and PHP.</p>
+            <a href="https://github.com/jeffamayo/glamorify" target="_blank">View on GitHub</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="./images//nina2.png" alt="TrackWise Expense Tracker">
+            <h3>TrackWise Expense Tracker</h3>
+            <p>An expense tracking web app that helps users manage and analyze their spending.</p>
+            <a href="https://github.com/jeffamayo/trackwise" target="_blank">View on GitHub</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="./images/nina3.png" alt="Currency Converter">
+            <h3>Currency Converter</h3>
+            <p>A JavaScript-based currency converter that provides real-time exchange rates.</p>
+            <a href="https://github.com/jeffamayo/currency-converter" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let's work together! Feel free to reach out.</p>
+
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Feel Free To Reach Out</h2>
+            <form action="your-php-script.php" method="post" id="contactForm">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="How can I assist you?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Inquiry</button>
+            </form>
+        </div>
+
+       
+    </section>
+
+
+    <!------ Footer Section ------>
+    <footer class="footer">
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    
+    <p>&copy; 2025 Jeff Amayo. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

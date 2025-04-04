@@ -1,0 +1,103 @@
+/* Resetting some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styling the redirect container */
+.redirect-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.5s ease-in-out;
+}
+
+/* Smooth slide-in animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Header text styling */
+.redirect-container h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Header bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Styling the paragraph */
+.redirect-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Link styling */
+.redirect-container a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.redirect-container a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Adding responsiveness */
+@media (max-width: 600px) {
+    .redirect-container {
+        padding: 20px;
+    }
+
+    .redirect-container h1 {
+        font-size: 2rem;
+    }
+
+    .redirect-container p {
+        font-size: 1rem;
+    }
+}
